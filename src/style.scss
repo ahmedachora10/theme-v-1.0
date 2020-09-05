@@ -1,0 +1,18 @@
+/* Custom Var and Mixin */
+
+@import 'sass/var';
+@import 'sass/global/reset';
+@import 'sass/global/classes';
+
+/* Import Font-Awesome File */
+
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+
+/* Import Bootstrap File */
+
+@import 'sass/bootstrap';
+@import 'sass/pages/home';
