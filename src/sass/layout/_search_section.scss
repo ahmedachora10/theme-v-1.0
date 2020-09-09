@@ -1,0 +1,36 @@
+.search-section {
+    background-color: $gray;
+    .search {
+        /* -------------- Responsive Style ------------- */
+        @include IPhone {
+            width: 70% !important;
+        }
+        @include SmallIPade {
+            width: 60% !important;
+        }
+        .input-group {
+            background-color: $white;
+            border: none;
+            .custom-select {
+                color: $black;
+                background-color: transparent !important;
+                border: none;
+                &:first-child {
+                    border-right: 1px solid lighten($primary-color, 30%);
+                }
+            }
+            .input-group-append {
+                border: none;
+                button {
+                    border: none;
+                    background: $primary-color;
+                    outline: none;
+                    i {
+                        font-size: 14px;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}
