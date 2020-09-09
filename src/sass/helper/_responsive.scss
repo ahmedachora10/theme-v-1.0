@@ -1,0 +1,68 @@
+@mixin Media ($width) {
+    @media #{$width} {
+        @content;
+    }
+}
+
+
+/* -------------- Smart Phone --------------- */
+
+@mixin SmartPhone() {
+    @include Media($smartPhones) {
+        @content;
+    }
+}
+
+
+/* -------------- IPhone --------------- */
+
+@mixin IPhone() {
+    @include Media($iPhone) {
+        @content;
+    }
+}
+
+
+/* -------------- Small IPade --------------- */
+
+@mixin SmallIPade() {
+    @include Media($iPadsSmallScreen) {
+        @content;
+    }
+}
+
+
+/* -------------- IPade --------------- */
+
+@mixin IPade() {
+    @include Media($iPads) {
+        @content;
+    }
+}
+
+
+/* -------------- Small Desktop --------------- */
+
+@mixin SmallDesktop() {
+    @include Media($desktopsSmallScreen) {
+        @content;
+    }
+}
+
+
+/* -------------- Desktop --------------- */
+
+@mixin Desktop() {
+    @include Media($desktops) {
+        @content;
+    }
+}
+
+
+/* -------------- Large Desktop --------------- */
+
+@mixin LargeDesktop() {
+    @include Media($desktopsLargeScreen) {
+        @content;
+    }
+}
