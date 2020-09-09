@@ -1,9 +1,14 @@
 /* Custom Var and Mixin */
 
 @import 'sass/var';
+@import 'sass/helper/responsive';
+@import 'sass/helper/custom_padding';
 @import 'sass/global/public_settings';
 @import 'sass/global/reset';
 @import 'sass/global/classes';
+@import 'sass/components/logo';
+@import 'sass/layout/header';
+@import 'sass/components/button';
 
 /* Import Font-Awesome File */
 
