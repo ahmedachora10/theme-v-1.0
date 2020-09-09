@@ -1,0 +1,55 @@
+$line: 30px;
+header.headline {
+    width: 549px;
+    /* -------------- Responsive Style ------------- */
+    @include SmartPhone {
+        width: (549px - 151);
+    }
+    @include IPhone {
+        width: (549px - 151);
+    }
+    @include SmallIPade {
+        width: (549px - 101);
+    }
+    @include IPade {
+        width: (549px - 50);
+    }
+    h2 {
+        font-size: 45px;
+        font-weight: bold;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            height: $line;
+            width: 2px;
+            background-color: $secondary-color;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            height: $line;
+            width: 2px;
+            background-color: $secondary-color;
+        }
+        /* -------------- Responsive Style ------------- */
+        @include SmartPhone {
+            font-size: 30px;
+        }
+        @include IPhone {
+            font-size: 30px;
+        }
+        @include SmallIPade {
+            font-size: 35px;
+        }
+        @include IPade {
+            font-size: 40px;
+        }
+    }
+}

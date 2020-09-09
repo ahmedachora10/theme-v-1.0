@@ -1,0 +1,18 @@
+.button-box {
+    position: absolute;
+    bottom: -12px;
+    right: 50%;
+    transform: translateX(50%);
+    .box {
+        background-color: $secondary-color;
+        padding: 1px 9px;
+        cursor: pointer;
+        i {
+            font-size: 20px;
+            color: $black;
+            position: relative;
+            top: 2px;
+            right: 3px;
+        }
+    }
+}
