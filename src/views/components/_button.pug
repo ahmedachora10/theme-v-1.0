@@ -1,0 +1,7 @@
+mixin button(id)
+    .button-box
+        .row.justify-content-center.align-items-center.r-flex
+            .box(id=`next-${id}` role="button" data-slide="next")
+                i.fa.fa-sort-up.fa-rotate-90
+            .box.fa-rotate-180(id=`prev-${id}` role="button" data-slide="prev")
+                i.fa.fa-sort-up.fa-rotate-90

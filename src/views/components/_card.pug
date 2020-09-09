@@ -1,0 +1,37 @@
+mixin card()
+    .card(style="width: 19rem;").box-shadow
+        .card-img-top.offer-img
+            div(id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel")
+                //- Slider
+                div(class="carousel-inner")
+                    div(class="carousel-item active")
+                        div(style="background-image: url(images/banner.jpg)" class="d-block w-100 bg-imgs")
+                    div(class="carousel-item")
+                        div(style="background-image: url(images/tb.jpg)" class="d-block w-100 bg-imgs")
+            //- Button
+            +button('offer-btn')
+        //- Offer Info
+        .card-body.mt-2
+            .address
+                i.fas.fa-map-marker-alt
+                span.card-text.mr-2 الخليج, الرياض - 1400 م.م
+
+            h5.card-title.my-2 عمارة شقق مفروشة
+
+            .info
+                .row.justify-content-start.align-items-center.r-flex
+                    .type.ml-4
+                        svg(xmlns="http://www.w3.org/2000/svg" width="17" height="13" viewBox="0 0 17 13")
+                            g(id="category" transform="translate(-1398 -670)")
+                                path(id="Shape" d="M17,13H12V7h5v6Zm-6,0H6V7h5v6ZM5,13H0V0H5V13ZM17,6H6V0H17V6Z" transform="translate(1398 670)")
+
+                        span.car-text.mr-2 عمارة
+                    .treatment
+                        i.fa.fa-exchange-alt
+                        span.car-text.mr-2 بيع
+            .price.mt-3
+                .row.justify-content-between.align-items-center.r-flex
+                    p على السوم
+                    a(href="#").offer-info
+                            i.fa.fa-eye
+                            span.card-text.mr-2 تفاصيل
