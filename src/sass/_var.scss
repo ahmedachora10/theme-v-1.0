@@ -3,10 +3,42 @@
 $primary-color:#E07C1F;
 $secondary-color: #E4961C;
 $black: #000;
-$whith: #fff;
+$white: #fff;
 $gray: #EBEBEB;
 
 /* ----------- Fonts ----------- */
 
 $heading-font: 'Times New Roman';
 $primary-font: 'Tajawal';
+
+/* ------------------------ Media Query ----------------------- */
+
+
+/* _____________ Smart Phones ____________ */
+
+$smartPhones: 'only screen and (min-width : 320px) and (max-width : 480px)';
+$smartPhonesLandscape: 'only screen and (min-width : 321px)';
+$smartPhonesPortrait: 'only screen and (max-width : 320px)';
+
+/* _____________ iPhone 5 ____________ */
+
+$iPhone: 'only screen and (min-width : 320px) and (max-width : 568px)';
+$iPhoneLandscape: 'only screen and (min-width : 320px) and (max-width : 568px) and (orientation : landscape)';
+$iPhonePortrait: 'only screen and (min-width : 320px) and (max-width : 568px) and (orientation : portrait)';
+
+/* _____________ IPads ____________ */
+
+$iPads: 'only screen and (min-width : 768px) and (max-width : 1024px)';
+$iPadsLandscape: 'only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : landscape)';
+$iPadsPortrait: 'only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait)';
+
+/* _____________ Desktops and Laptops ____________ */
+
+$desktopsSmallScreen: 'only screen and (min-width : 979px) and (max-width : 1223px)';
+$desktops: 'only screen and (min-width : 1224px)';
+$desktopsLargeScreen: 'only screen and (min-width : 1824px)';
+
+/* _______________ Custom Screen Size __________________ */
+
+$iPadsSmallScreen: 'only screen and (min-width : 570px) and (max-width : 767px)';
+$customScreen: 'only screen and (min-width: 992px) and (max-width: 1198px)';
