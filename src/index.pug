@@ -1,12 +1,14 @@
 include ./views/helper/_var
 
+block Public
+    - pageTitle = 'Home'
+
 
 <!DOCTYPE html>
-html(lang="en")
+html(lang="ar" dir="rtl")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title=pageTitle
     body
-        //- i.fa.fa-user(aria-hidden='true') &nbsp; Good
-        //- i.fab.fa-facebook(aria-hidden='true') &nbsp; Good
+        include ./views/pages/_home

@@ -1,0 +1,254 @@
+.header {
+    a {
+        font-size: 14px;
+        font-weight: 600;
+        color: lighten($black, 10%);
+        /* -------------- Responsive Style ------------- */
+        @include IPade {
+            font-size: 18px;
+        }
+        @include SmallIPade {
+            font-size: 18px;
+        }
+        @include SmallDesktop {
+            font-size: 18px;
+        }
+        @include IPhone {
+            font-size: 18px;
+        }
+    }
+    /* Show Menu Button Style*/
+    .show-menu {
+        display: block;
+        /* -------------- Responsive Style ------------- */
+        @include Desktop {
+            display: none;
+        }
+    }
+    /* Menu Bar Style */
+    .menu-bar {
+        @extend .box-shadow;
+        position: relative;
+        background: $white;
+        position: absolute;
+        top: 0;
+        right: -50%;
+        height: 100vh;
+        width: 50%;
+        z-index: 9999;
+        transition: .3s;
+        &>div.row {
+            /* -------------- Responsive Style ------------- */
+            @include SmallDesktop {
+                flex-direction: column;
+                justify-items: flex-start !important;
+                align-items: flex-start !important;
+            }
+            @include IPhone {
+                flex-direction: column;
+                justify-items: flex-start !important;
+                align-items: flex-start !important;
+            }
+            &>div {
+                @include SmallDesktop {
+                    flex: 0 0 100% !important;
+                    max-width: 100% !important;
+                }
+                @include IPhone {
+                    flex: 0 0 100% !important;
+                    max-width: 100% !important;
+                }
+            }
+        }
+        /* -------------- Responsive Style ------------- */
+        @include SmallDesktop {
+            padding: 3rem !important;
+        }
+        @include IPhone {
+            padding: 3rem !important;
+            width: 80%;
+            right: -80%;
+        }
+        @include Desktop {
+            box-shadow: none !important;
+            position: relative;
+            background: none;
+            position: unset;
+            height: 100%;
+            width: 100%;
+        }
+        .close-btn {
+            display: block;
+            position: absolute;
+            top: 14px;
+            left: 22px;
+            cursor: pointer;
+            i {
+                color: $primary-color;
+            }
+            /* -------------- Responsive Style ------------- */
+            @include Desktop {
+                display: none;
+            }
+        }
+        .logo {
+            /* -------------- Responsive Style ------------- */
+            @include Desktop {
+                display: none;
+            }
+            @include SmallDesktop {
+                margin-top: 3rem !important;
+                margin-bottom: 3rem !important;
+            }
+            @include IPhone {
+                margin-top: 3rem !important;
+                margin-bottom: 3rem !important;
+            }
+            img {
+                width: 200px;
+            }
+        }
+    }
+    .menu {
+        /* -------------- Responsive Style ------------- */
+        @include SmallDesktop {
+            margin: 0.5rem 0 !important;
+        }
+        @include IPhone {
+            margin: 0.5rem 0 !important;
+        }
+        ul#main-menu {
+            /* -------------- Responsive Style ------------- */
+            @include SmallIPade {
+                flex-direction: column;
+            }
+            @include IPade {
+                flex-direction: column;
+            }
+            @include SmallDesktop {
+                flex-direction: column;
+                justify-items: flex-start !important;
+                align-items: flex-start !important;
+            }
+            @include IPhone {
+                flex-direction: column;
+                justify-items: flex-start !important;
+                align-items: flex-start !important;
+            }
+            li {
+                position: relative;
+                /* -------------- Responsive Style ------------- */
+                @include SmallDesktop {
+                    margin: 0.5rem 0 !important;
+                }
+                @include IPhone {
+                    margin: 0.5rem 0 !important;
+                }
+                .sub-menu {
+                    background: $white;
+                    position: absolute;
+                    top: 58px;
+                    right: 0;
+                    width: 250px;
+                    z-index: 9999;
+                    /* -------------- Responsive Style ------------- */
+                    @include IPhone {
+                        box-shadow: none !important;
+                        position: unset !important;
+                        width: 100%;
+                    }
+                    @include IPade {
+                        box-shadow: none !important;
+                        position: unset !important;
+                        width: 100%;
+                    }
+                    @include SmallIPade {
+                        box-shadow: none !important;
+                        position: unset !important;
+                        width: 100%;
+                    }
+                    @include SmallDesktop {
+                        box-shadow: none !important;
+                        position: unset !important;
+                        width: 100%;
+                    }
+                    @include IPhone {
+                        box-shadow: none !important;
+                        position: unset !important;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .login {
+        text-align: left;
+        @include SmallIPade {
+            text-align: right;
+        }
+        @include IPade {
+            text-align: right;
+        }
+        @include SmallDesktop {
+            margin-top: 1.5rem !important;
+        }
+        @include IPhone {
+            margin-top: 1.5rem !important;
+        }
+        a {
+            @include SmallIPade {
+                display: block;
+            }
+            @include IPade {
+                display: block;
+            }
+            @include SmallDesktop {
+                display: block;
+                margin-top: 0.5rem !important;
+                margin-bottom: 0.5rem !important;
+                margin-left: 0 !important;
+            }
+            @include IPhone {
+                display: block;
+                margin-top: 0.5rem !important;
+                margin-bottom: 0.5rem !important;
+                margin-left: 0 !important;
+            }
+        }
+    }
+}
+
+.sub-menu {
+    display: none;
+    // transition: .3s;
+    ul {
+        li {
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.sort-down {
+    position: absolute;
+    top: -8px;
+    font-size: 20px;
+    color: $gray;
+    /* -------------- Responsive Style ------------- */
+    @include IPhone {
+        display: none;
+    }
+    @include IPade {
+        display: none;
+    }
+    @include SmallIPade {
+        display: none;
+    }
+    @include SmallDesktop {
+        display: none;
+    }
+    @include IPhone {
+        display: none;
+    }
+}
